@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(120deg,#1ea528,white);
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container{
+border: 2px red solid;
+background-color:springgreen;
+margin:20px 450px;
+height: 570px;
+width: 400px;
+padding: 20px;
+text-align: center;
+}
+#demo1{
+padding: 10px;
+border-bottom: 2px red dashed;
+}
+
+#demo2{
+padding: 10px;
+border-bottom: 2px red dashed;
+}
+#demo3{
+padding: 10px;
+}
