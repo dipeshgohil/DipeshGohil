@@ -1,9 +1,8 @@
-let nestedArr = [1, [2], 3] ;
-let count=0;
-for (let i = 0; i < nestedArr.length; i++) {
-  console.log(nestedArr[i]);
-  count++;
-}
-console.log(count)
-
-
+const arr = [1, 2, [3, 4, [5]]];
+const deepCount = (arr = []) => {
+   return arr
+   .reduce((acc, val) => {
+      return acc + (Array.isArray(val) ? deepCount(val) : 0);
+   }, arr.length);
+};
+console.log(deepCount(arr));
